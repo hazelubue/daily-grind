@@ -2,92 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>LARGEBUCK$ Coffee</title>
- 	<!-- below is a google font, go to https://www.google.com/fonts to get yours! -->
-	<link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-	<link id="mainStylesheet" rel="stylesheet" href="css/default.css">
-    <style>
-	
-        html {background-color:#FF7518;}
-
-		.masthead{
-			font-family: 'Holtwood One SC', serif; /* required for google font */
-			font-size:3em;
-		}
-	
-		#logo{
-			float:right;
-			display:inline-block;
-			padding:2px;
-			max-width:100px; /* actual size of image */
-			width:20%; /* approximate size taken on screen in maximum view */
-		}
-	
-		#coffee {
-			float:left;
-			display:inline-block;
-			padding:20px;
-			max-width:300px; /* best if actual size of image */
-			width:33%; /* approximate size taken on screen in maximum view */
-		}
-
-        h3.slogan{
-           font-style:italic;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Coffee Special | The Daily Grind</title>
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
-	<header>
-	    <img src="images/largebucks-logo.jpg" alt="You drink our coffee, we make large bucks!" class="flexible" id="logo">
-		<h1 class="masthead">LARGEBUCK$ COFFEE</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Sample Link</a></li>
+    <div class="container">
+        <header>
+            <img src="images/largebucks-logo.jpg" alt="You drink our coffee, we make large bucks!" class="flexible" id="logo">
+            <h1 class="masthead">THE DAILY GRIND</h1>
+            <p class="slogan">Discover a new coffee special every day of the week!</p>
+        </header>
+
+        <!--<nav>
+            <ul>
                 <li><a href="#">Sample Link</a></li>
                 <li><a href="#">Sample Link</a></li>
                 <li><a href="#">Sample Link</a></li>
                 <li><a href="#">Sample Link</a></li>
-			</ul>
-		</nav>
-	</header>
-    <main>
-		 <header><h2 class="slogan">You drink our coffee, we make large bucks!</h2></header>
-        <p>
-			<img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee">
-			<strong>Monday's Coffee Special:</strong> Monday's daily coffee special is <strong>Pumpkin Spice Latte</strong>, 
-			which makes us wish it was always Fall, as this is one of our top sellers!
-		</p>
-		 <p>
-		 	<b>At LargeBuck$ we aspire to: </b>Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin 
-			 coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts 
-			 sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual 
-			 skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
-		 </p>
-		<p>
-			Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. 
-			Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr 
-			wayfarers ethical. Biodiesel VHS Godard High Life, tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. 
-			Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
-		</p>
-		<p>
-		Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, 
-			taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, 
-			listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth paleo 
-			banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter migas retro Banksy YOLO Carles yr raw denim. 
-			Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel put a bird on it master cleanse.
-		</p>
-		<p>
-		Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
-		</p>
-     </main>
-	 <footer>
-		<p><small>&copy; 2026 by 
-			YOUR NAME HERE, All Rights Reserved ~ 
-			<a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
-			<a id="css-checker" href="#"  target="_blank">Check CSS</a></small>
-	   </p>
-	  </footer>
-	<script src="js/main.js"></script>
-	<script src="js/daily-grind.js"></script>
+                <li><a href="#">Sample Link</a></li>
+            </ul>
+        </nav> -->
+
+        <div class="day-selector">
+            <a href="?day=Monday"    class="day-link" data-day="Monday">Monday</a>
+            <a href="?day=Tuesday"   class="day-link" data-day="Tuesday">Tuesday</a>
+            <a href="?day=Wednesday" class="day-link" data-day="Wednesday">Wednesday</a>
+            <a href="?day=Thursday"  class="day-link" data-day="Thursday">Thursday</a>
+            <a href="?day=Friday"    class="day-link" data-day="Friday">Friday</a>
+            <a href="?day=Saturday"  class="day-link" data-day="Saturday">Saturday</a>
+            <a href="?day=Sunday"    class="day-link" data-day="Sunday">Sunday</a>
+        </div>
+
+        <div id="coffee-container" class="fade-in">
+        </div>
+
+        <footer>
+            <p><small>
+                &copy; <span id="year"></span> by
+                <span id="your-name">Hazel Herger</span>, All Rights Reserved ~
+                <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+                <a id="css-checker" href="#" target="_blank">Check CSS</a>
+            </small></p>
+            <p><small>
+                This page uses JavaScript to read the current day of the week via the <code>Date</code> object,
+                then selects matching coffee content (image, description, and color) from a data object using
+                a query string parameter (<code>?day=</code>) so visitors can browse any day's special from a single page.
+            </small></p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
